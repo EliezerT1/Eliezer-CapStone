@@ -17,13 +17,12 @@ const Body = () => {
             }}
             className='w-full '>
                 <div className="flex justify-between items-start gap-11 pt-[64px] pb-[464px] pl-[24px] pr-[24px] max-md:items-center max-md:justify-center max-md:flex-col">
-                    <div className="flex w-full justify-center max-md:justify-center max-md:items-center">
-                        <img src="/1.png" alt="" className='w-[200px]'/>
+                    <div className="flex  max-md:justify-center max-md:items-center">
                     </div>
-                    <div className="flex flex-col gap-10 items-center justify-center">
-                        <h2 className='text-xl font-semibold text-center'>Hello | Image</h2>
+                    <div className="flex flex-col gap-7 ">
+                        <h2 className='text-xl font-semibold text-center'>Computer | Programer</h2>
                         <h1 className="text-7xl font-semibold w-full text-center">Technology Apprentice</h1>
-                        <p className="text-smw-full text-center">about if jeoihfioewhfohefheoifheiofheoihiof me</p>
+                        <p className="text-smw-full text-center">about if jeoihfioaifejfjjfjfjfjfjfjjfjfjjfjfjfjjfjf dkfkfkfkfkfkkfkfkf ewhfohefheoifheiofheoihiof me</p>
                         <button className='bg-[#2D2D2D] cursor-pointer text-white p-4 w-[150px] h-[55px] flex items-center justify-center'>
                             <a href="https://www.linkedin.com/in/eliezer-then/" target="_blank" className="linkedin-btn">
                                 <i className="fab fa-linkedin-in"></i> LinkedIn
@@ -32,7 +31,11 @@ const Body = () => {
                     </div>
 
                     <div className="flex w-full justify-center max-md:justify-center max-md:items-center">
-                        <img src="/2.png" alt="" />
+                        <img 
+                            src="assets/me.jpg" 
+                            alt="Eliezer Then" 
+                            className="w-[400px] h-[500px] object-cover rounded-2xl shadow-lg"
+                        />
                     </div>
                 </div>
             </motion.section>

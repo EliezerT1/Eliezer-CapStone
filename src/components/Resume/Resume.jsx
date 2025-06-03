@@ -1,34 +1,108 @@
-import React from 'react';
-import { gsap } from 'gsap';
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+
+const buttonStyle = {
+  background: "oklch(44.6% 0.043 257.281)",
+  color: "#fff",
+  border: "none",
+  borderRadius: "999px",
+  padding: "12px 32px",
+  fontSize: "1rem",
+  fontWeight: 600,
+  cursor: "pointer",
+  margin: "12px 0",
+  boxShadow: "0 2px 8px rgba(123,47,242,0.15)",
+  transition: "transform 0.2s, box-shadow 0.2s",
+  alignSelf: "flex-start",
+  marginLeft: "32px",
+};
+
+const hoverStyle = {
+  transform: "scale(1.08)",
+  boxShadow: "0 4px 16px rgba(123,47,242,0.25)",
+};
 
 const Resume = () => {
-  React.useEffect(() => {
-    // Animate header and container for a dynamic entrance.
-    gsap.from("#resumeHeading", { duration: 1, opacity: 0, y: -50, ease: "power4.out" });
-    gsap.from("#resumeContainer", { duration: 1.5, opacity: 0, y: 50, ease: "power4.out", delay: 0.5 });
-  }, []);
+  const navigate = useNavigate();
+  const [backHover, setBackHover] = useState(false);
+  const [downloadHover, setDownloadHover] = useState(false);
 
   return (
-    <div id="resumeContainer" className="container mx-auto px-6 py-16">
-      {/* Animated Header */}
-      <div className="flex flex-col items-center justify-center mb-10">
-        <h1 id="resumeHeading" className="text-5xl font-bold bg-gradient-to-r from-primary to-accent text-black drop-shadow-xl inline-block px-8 py-4 rounded-lg">
-          My Resume
-        </h1>
-      </div>
-      {/* PDF Embed Container without side borders */}
-      <div className="shadow-2xl rounded-xl overflow-hidden mx-auto max-w-4xl">
-        <iframe src="Eliezer-Then-Resume.pdf#toolbar=0" width="100%" height="700px" className="bg-white" style={{ border: 'none' }}>
-          This browser does not support PDFs. Please download the resume to view it: 
-          <a href="Eliezer-Then-Resume.pdf#toolbar=0" className="no-underline">Download Resume</a>.
+    <div
+      style={{
+        background: "#f4f4f4",
+        minHeight: "100vh",
+        fontFamily: "Arial, sans-serif",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        margin: 0,
+        padding: 0,
+      }}
+    >
+      {/* Back Button */}
+      <button
+        onClick={() => navigate("/")}
+        style={{
+          ...buttonStyle,
+          ...(backHover ? hoverStyle : {}),
+        }}
+        aria-label="Back to Home"
+        onMouseEnter={() => setBackHover(true)}
+        onMouseLeave={() => setBackHover(false)}
+      >
+        <span style={{ fontSize: "2rem", lineHeight: 1 }}>&#8592;</span>
+      </button>
+
+      <h1
+        style={{
+          marginTop: 30,
+          marginBottom: 30,
+          fontSize: "3rem",
+          fontWeight: 800,
+          fontFamily: "'Montserrat', Arial, sans-serif",
+          background: "linear-gradient(90deg, oklch(44.6% 0.043 257.281), #a18cd1)",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
+          letterSpacing: "2px",
+          textAlign: "center",
+        }}
+      >
+        Eliezer Then's Resume
+      </h1>
+      <div
+        style={{
+          width: "90vw",
+          maxWidth: 900,
+          height: "90vh",
+        }}
+      >
+        <iframe
+          src="/assets/Eliezer-Then-Resume.pdf#toolbar=0"
+          title="Eliezer Then Resume"
+          width="100%"
+          height="100%"
+          style={{ border: "none" }}
+        >
+          This browser does not support PDFs. Please download the PDF to view it:
+          <a href="/assets/Eliezer-Then-Resume.pdf">Download PDF</a>
         </iframe>
       </div>
-      {/* Download Resume Button */}
-      <div className="mt-8 flex justify-center">
-        <a href="Eliezer-Then-Resume.pdf#toolbar=0" download className="bg-secondary bg-gray-400 hover:bg-gray-700 transition-colors font-semibold py-3 px-8 rounded-full shadow-lg text-white no-underline">
-          Download Resume
-        </a>
-      </div>
+      {/* Download Button Below Resume */}
+      <a
+        href="/assets/Eliezer-Then-Resume.pdf"
+        download
+        style={{
+          ...buttonStyle,
+          alignSelf: "center",
+          marginLeft: 0,
+          ...(downloadHover ? hoverStyle : {}),
+        }}
+        onMouseEnter={() => setDownloadHover(true)}
+        onMouseLeave={() => setDownloadHover(false)}
+      >
+        Download
+      </a>
     </div>
   );
 };

@@ -15,7 +15,7 @@ const Header = () => {
                     </button>
                     <ul className={`md:flex md:space-x-6 md:items-center absolute md:static top-16 left-0 w-full bg-[#f0f8ff] md:w-auto md:bg-transparent 
                     md:flex-row transition-all duration-300 ease-in-out ${isOpen ? 'h-[200px]' : 'h-[0px]'}`}>
-                        <li><a href='#' className={`block ${isOpen ? "" : "max-md:hidden"} transition-all duration-300 ease-in-out pr-4 pl-4 pt-2 pb-2 hover:text-gray-600`}>About me</a></li>
+                        <li><a href='#' className={`block ${isOpen ? "" : "max-md:hidden"} transition-all duration-300 ease-in-out pr-4 pl-4 pt-2 pb-2 hover:text-gray-600`}>Home</a></li>
                         <li>
                           <Link to="/resume" className={`block ${isOpen ? "" : "max-md:hidden"} transition-all duration-300 ease-in-out pr-4 pl-4 pt-2 pb-2 hover:text-gray-600`}>
                             Resume

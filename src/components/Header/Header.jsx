@@ -41,8 +41,8 @@ const Header = () => {
     }, [location]);
 
     return (
-        <header className='w-full'>
-            <nav className='bg-white/50 text-black p-4 shadow-lg'>
+        <header className='w-full fixed top-0 left-0 z-50'>
+            <nav className='bg-white/50 text-black p-4 shadow-lg backdrop-blur'>
                 <div className='flex items-center justify-between'>
                     <a href="/" className="text-2xl font-bold">Portfolio</a>
                     <button className='block text-black cursor-pointer md:hidden'
@@ -58,12 +58,6 @@ const Header = () => {
                             className={`block ${isOpen ? "" : "max-md:hidden"} transition-all duration-300 ease-in-out pr-4 pl-4 pt-2 pb-2 hover:text-gray-600`}>
                             About Me
                           </a>
-                        </li>
-                        <li>
-                          <Link to="/resume" onClick={handleAnchorClick}
-                            className={`block ${isOpen ? "" : "max-md:hidden"} transition-all duration-300 ease-in-out pr-4 pl-4 pt-2 pb-2 hover:text-gray-600`}>
-                            Resume
-                          </Link>
                         </li>
                         <li>
                           <a
@@ -88,6 +82,18 @@ const Header = () => {
                             className={`block ${isOpen ? "" : "max-md:hidden"} transition-all duration-300 ease-in-out pr-4 pl-4 pt-2 pb-2 hover:text-gray-600`}>
                             Testimonials
                           </a>
+                        </li>
+                        <li>
+                          <Link to="/gallery" onClick={handleAnchorClick}
+                            className={`block ${isOpen ? "" : "max-md:hidden"} transition-all duration-300 ease-in-out pr-4 pl-4 pt-2 pb-2 hover:text-gray-600`}>
+                            Gallery
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/resume" onClick={handleAnchorClick}
+                            className={`block ${isOpen ? "" : "max-md:hidden"} transition-all duration-300 ease-in-out pr-4 pl-4 pt-2 pb-2 hover:text-gray-600`}>
+                            Resume
+                          </Link>
                         </li>
                         <li>
                           <Link

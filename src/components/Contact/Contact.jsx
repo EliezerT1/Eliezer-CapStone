@@ -74,15 +74,15 @@ export default function ContactSection() {
           <FaLinkedin className="w-6 h-6" />
           <span>LinkedIn</span>
         </a>
-        <a
-          href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME"
+        {/* <a
+          href="https://www.instagram.com/eliezer_t1/?igsh=MXZvenMxcW82cGZodA%3D%3D&utm_source=qr#"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center space-x-2 text-gray-600 hover:text-pink-600 transition-colors"
         >
           <FaInstagram className="w-6 h-6" />
           <span>Instagram</span>
-        </a>
+        </a> */}
         <div className="flex items-center space-x-2 text-gray-600">
           <FaEnvelope className="w-6 h-6" />
           <span>eliezerthen080@gmail.com</span>

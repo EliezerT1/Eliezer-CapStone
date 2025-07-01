@@ -17,29 +17,28 @@ const testimonials = [
 	},
 	{
 		text: `I've had the pleasure of working with Eliezer since he joined Tech Innovation. During his time here, he transformed into a confident junior developer and achieving innovator. While he started his work on various Tech Innovation projects, he later brought his talents to our security and governance team. Thanks to his efforts, we have decommissioned hundreds of assets bring in $40k+ in cloud spend savings. He continues to strive forward by automating new portions of governance and build a larger management platform. Eliezer's drive for innovation, adaptability, and adherence to delivering excellence, make him an irreplaceable team member.`,
-		name: 'Evelyn Stellar',
+		name: 'Evelyn Stellara',
 		title: 'Advanced App Engineering Specialist',
 		img: Evelyn,
 	},
 	{
-		text: `I had the pleasure of working with and seeing Eliezer across several impactful projects, including our in-office Photobooth, Cloud Governance initiatives, Gen AI v2, and the Pill Dispenser prototype. Eliezer played a key role in enhancing the Photobooth experience—implementing frontend improvements in React, refining the Python backend, and even making hands-on adjustments to the physical hardware. In our Cloud Governance efforts, he was instrumental in ensuring our cloud resources were secure, compliant, and properly maintained. For the Pill Dispenser IoT device, Eliezer helped bring a fully functional prototype to life, which was successfully showcased to clients. His ability to work across both software and hardware, while consistently delivering high-quality results, made him an invaluable part of the team.`,
+		text: `Eliezer quickly becomes an expert at whatever complex technology you can throw at him. He can build complex apps end-to-end, like a mixed reality photobooth kiosk that had front-end, back-end, and AI components. He also has very strong cloud experience, serving as a cloud admin for AWS and Azure environments with hundreds of users and thousands of resources.`,
 		name: 'Daniel Steinberg',
 		title: 'Advanced App Engineering Specialist',
 		img: Daniel,
 	},
 	{
-		text: `I had the pleasure of working with and seeing Eliezer across several impactful projects, including our in-office Photobooth, Cloud Governance initiatives, Gen AI v2, and the Pill Dispenser prototype. Eliezer played a key role in enhancing the Photobooth experience—implementing frontend improvements in React, refining the Python backend, and even making hands-on adjustments to the physical hardware. In our Cloud Governance efforts, he was instrumental in ensuring our cloud resources were secure, compliant, and properly maintained. For the Pill Dispenser IoT device, Eliezer helped bring a fully functional prototype to life, which was successfully showcased to clients. His ability to work across both software and hardware, while consistently delivering high-quality results, made him an invaluable part of the team.`,
+		text: `I’ve had the privilege of working closely with Eliezer over the past two years of his program, supporting a wide range of projects and initiatives. From the early days of navigating beginner coding tutorials with him to today, I’ve witnessed a remarkable journey of growth — not just in technical skill, but in adaptability and professionalism within a corporate environment. What stands out most is his pivotal role in mastering and supporting the seven 1MW Interactive Hives. These systems, which integrate advanced software and hardware technologies, were initially managed and supported by a third-party provider. Thanks in large part to Eliezer's dedication, technical, and critical thinking acumen, Accenture was able to confidently take full ownership of the Hives. His ability to quickly learn complex systems, share knowledge, and support the team made a real impact on our success.Whether tackling new programming challenges, adapting to corporate ways of working, or stepping up during transitions, Eliezer consistently demonstrated initiative and a collaborative spirit. I’m grateful for the opportunity to have worked alongside him and to have gotten a front row seat to see his incredible growth.`,
 		name: 'Pearson Reese',
 		title: 'Tech Innovation Eng Assoc Manager',
 		img: Pearson,
 	},
 	{
-		text: `I had the pleasure of working with and seeing Eliezer across several impactful projects, including our in-office Photobooth, Cloud Governance initiatives, Gen AI v2, and the Pill Dispenser prototype. Eliezer played a key role in enhancing the Photobooth experience—implementing frontend improvements in React, refining the Python backend, and even making hands-on adjustments to the physical hardware. In our Cloud Governance efforts, he was instrumental in ensuring our cloud resources were secure, compliant, and properly maintained. For the Pill Dispenser IoT device, Eliezer helped bring a fully functional prototype to life, which was successfully showcased to clients. His ability to work across both software and hardware, while consistently delivering high-quality results, made him an invaluable part of the team.`,
+		text: `I've had the pleasure of working with Eliezer through the One Manhattan West initiative as well as the Cloud Governance team. He brings a calm, thoughtful approach to problem-solving and shows a strong willingness to learn. As a junior developer, he's contributed to front-end development efforts and steadily expanded his skill set into backend work. His adaptability and curiosity have made him a reliable and valuable teammate across both initiatives. With his drive and growth mindset, I’m confident Eliezer will continue to thrive and make an even greater impact as he progresses in his career. Eliezer has a bright future ahead.`,
 		name: 'Lennart Lewis',
 		title: 'Tech Architecture Analyst',
 		img: Lennart,
 	},
-	// ...add more testimonials as needed
 ];
 
 const getPreview = (text, wordCount = 15) => {

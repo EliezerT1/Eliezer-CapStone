@@ -38,7 +38,7 @@ const Body = () => {
                         <img
                             src="assets/me.jpg"
                             alt="Eliezer Then"
-                            className="w-[400px] h-[500px] object-cover rounded-2xl shadow-lg"
+                            className="w-[400px] h-[100px] object-cover rounded-2xl shadow-lg"
                             style={{ minWidth: 400, minHeight: 500 }}
                         />
                     </div>
@@ -72,10 +72,10 @@ const Body = () => {
         date: "August 2024 – May 2028",
         desc: (
             <ul className="list-disc mt-2 text-lg space-y-1">
-                <li>Currently pursuing a B.S. in Computer Science with a minor in CybersecurityCurrently pursuing a B.S. in Computer Science with a minor in Cybersecurity.</li>
+                <li>Currently pursuing a B.S. in Computer Science with a minor in Cybersecurity.</li>
             </ul>
         ),
-        extra: <p className="mt-1 font-semibold">GPA: 3.532</p>
+        extra: <p className="mt-1 font-semibold">GPA: 3.53</p>
     },
     {
         title: "Hives Project, Accenture",

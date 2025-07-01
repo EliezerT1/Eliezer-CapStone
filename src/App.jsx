@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import Body from './components/Body/Body';
 import Resume from './components/Resume/Resume';
 import Contact from './components/Contact/Contact';
+import Gallery from './components/Gallery/Gallery';
 import './App.css';
 import "swiper/css/bundle";
 
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Body />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
       </div>
     </Router>

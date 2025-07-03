@@ -20,25 +20,29 @@ const Body = () => {
                 }}
                 className='w-full'
             >
-                <div className="flex justify-center items-center pt-[64px] pb-[64px] px-[48px] max-md:flex-col w-full">
+                <div className="flex justify-center items-center pt-[64px] pb-[64px] px-[48px] max-md:flex-col w-full " id='about-me'>
                     <div className="flex flex-col gap-7 items-center text-center w-full md:w-1/2">
                         <h2 className='text-xl font-semibold'>Computer | Programmer</h2>
-                        <h1 className="text-7xl font-semibold w-full">Eliezer Then</h1>  
+                        <h1 className="text-7xl font-semibold w-full">Eliezer Then</h1>
+                        {/* Line below the name */}
+                        {/* <div className="hidden md:block w-full">
+                            <div className="h-1 bg-black rounded-full mt-2 mb-4" style={{ maxWidth: 1200, marginLeft: 'auto', marginRight: 0 }} />
+                        </div> */}
                                      
                         <TypeWriterQuote 
                         text="Powered by curiosity and integrity" 
                         speed={120}>
                         </TypeWriterQuote>
 
-                        <p className="text-2xl w-full" id='about me'>
-                            Hello, my name is Eliezer. I’m a first-generation Dominican American from the Bronx and the first in my family to attend college. I’m currently pursuing a B.S. in Computer Science with a minor in Cybersecurity at Fordham University, where I balance full-time studies with an intensive tech apprenticeship.
+                        <p className="text-2xl w-full">
+                            Hello, my name is Eliezer. I’m a first-generation Dominican American from the Bronx and the first in my family to attend college. I’m currently pursuing a B.S. in Computer Science with a minor in Cybersecurity at Fordham University, where I balance full-time studies with an intensive technology apprenticeship.
                         </p>
                     </div>
                     <div className="flex justify-center items-center flex-shrink-0 w-full md:w-1/2">
                         <img
                             src="assets/me.jpg"
                             alt="Eliezer Then"
-                            className="w-[400px] h-[100px] object-cover rounded-2xl shadow-lg"
+                            className="w-[400px] h-[100px] object-cover rounded-2xl shadow-lg mt-10" // Added mt-10 for margin-top
                             style={{ minWidth: 400, minHeight: 500 }}
                         />
                     </div>
@@ -122,7 +126,7 @@ const Body = () => {
         ),
     },
     {
-        title: "Technology Apprentice Schhol, Accenture",
+        title: "Technology Apprentice School, Accenture",
         date: " January 2022 – Febuary 2023",
         desc: (
             <ul className="list-disc mt-2 text-lg space-y-1">
@@ -153,6 +157,7 @@ const Body = () => {
             extra: <p className="mt-1 font-semibold">GPA: 3.2</p>
         },
 ]
+.reverse()
 .map((event, idx) => (
     <div
         key={event.title}

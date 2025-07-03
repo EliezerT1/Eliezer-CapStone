@@ -44,7 +44,7 @@ const Header = () => {
         <header className='w-full fixed top-0 left-0 z-50'>
             <nav className='bg-white/50 text-black p-4 shadow-lg backdrop-blur'>
                 <div className='flex items-center justify-between'>
-                    <a href="/" className="text-2xl font-bold">Portfolio</a>
+                    <a href="/" className="text-2xl font-bold">Eliezer Then Portfolio</a>
                     <button className='block text-black cursor-pointer md:hidden'
                         onClick={() => setIsOpen(!isOpen)}>
                         {isOpen ? <MdMenuOpen className='text-3xl' /> : <MdMenu className='text-3xl' />}

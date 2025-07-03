@@ -46,6 +46,7 @@ const Resume = () => {
         style={{
           ...buttonStyle,
           ...(backHover ? hoverStyle : {}),
+          marginTop: "80px", // Increased from 40px to 80px for more space
         }}
         aria-label="Back to Home"
         onMouseEnter={() => setBackHover(true)}
@@ -61,9 +62,6 @@ const Resume = () => {
           fontSize: "3rem",
           fontWeight: 800,
           fontFamily: "'Montserrat', Arial, sans-serif",
-          background: "linear-gradient(90deg, oklch(44.6% 0.043 257.281), #a18cd1)",
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
           letterSpacing: "2px",
           textAlign: "center",
         }}

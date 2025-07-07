@@ -127,7 +127,7 @@ const Body = () => {
     },
     {
         title: "Technology Apprentice School, Accenture",
-        date: " January 2022 – Febuary 2023",
+        date: " January 2022 – February 2022",
         desc: (
             <ul className="list-disc mt-2 text-lg space-y-1">
                <li>Led AI/chatbot challenge presentation to senior leadership.</li>

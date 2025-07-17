@@ -13,9 +13,9 @@ export default function ContactSection() {
         className="text-center mb-10"
       >
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
-        <p className="text-lg text-gray-600">
+        {/* <p className="text-lg text-gray-600">
           Have questions or just want to say hello? Fill out the form below and I’ll get back to you.
-        </p>
+        </p> */}
       </motion.div>
 
       {/* Contact form */}
@@ -74,7 +74,7 @@ export default function ContactSection() {
           <FaLinkedin className="w-6 h-6" />
           <span>LinkedIn</span>
         </a>
-        {/* <a
+        <a
           href="https://www.instagram.com/eliezer_t1/?igsh=MXZvenMxcW82cGZodA%3D%3D&utm_source=qr#"
           target="_blank"
           rel="noopener noreferrer"
@@ -82,7 +82,7 @@ export default function ContactSection() {
         >
           <FaInstagram className="w-6 h-6" />
           <span>Instagram</span>
-        </a> */}
+        </a>
         <div className="flex items-center space-x-2 text-gray-600">
           <FaEnvelope className="w-6 h-6" />
           <span>eliezerthen080@gmail.com</span>

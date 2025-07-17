@@ -11,6 +11,8 @@ const Projects = () => (
             <img
               src="/assets/Project1.png"
               alt="PhotoBooth"
+              onClick={() => window.open('http://127.0.0.1:5000/', '_blank')}
+              style={{ cursor: 'pointer' }}
               className="object-cover w-full h-full rounded-2xl bg-white border-2 border-black"
             />
           </div>

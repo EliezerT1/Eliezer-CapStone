@@ -40,9 +40,9 @@ const Body = () => {
                     </div>
                     <div className="flex justify-center items-center flex-shrink-0 w-full md:w-1/2">
                         <img
-                            src="assets/me.jpg"
+                            src="assets/me2.jpg"
                             alt="Eliezer Then"
-                            className="w-[400px] h-[100px] object-cover rounded-2xl shadow-lg mt-10" // Added mt-10 for margin-top
+                            className="w-[400px] h-[100px] object-cover rounded-2xl shadow-lg mt-10 border-2" // Added mt-10 for margin-top
                             style={{ minWidth: 400, minHeight: 500 }}
                         />
                     </div>

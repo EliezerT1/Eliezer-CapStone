@@ -14,7 +14,7 @@ const Gallery = () => (
             <img
               src="/assets/Image2.jpg"
               alt="Meet & Greet Panel"
-              className="rounded-xl shadow-md object-cover w-full h-[340px] mb-2 brightness-150 transition-transform duration-300 group-hover:scale-105 group-hover:brightness-75"
+              className="rounded-xl shadow-md object-cover w-full h-[340px] mb-2 brightness-150 transition-transform duration-300 group-hover:scale-105 group-hover:brightness-100"
               style={{ objectPosition: "center" }}
             />
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
